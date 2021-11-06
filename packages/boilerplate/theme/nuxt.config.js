@@ -42,6 +42,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // to core
+    ['vsf-wordpress/nuxt'],
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
     ['@vue-storefront/nuxt', {
@@ -138,7 +139,8 @@ export default {
       ]
     },
     transpile: [
-      'vee-validate/dist/rules'
+      'vee-validate/dist/rules',
+      '@Oxyssweden/vsf-wordpress'
     ],
     plugins: [
       new webpack.DefinePlugin({

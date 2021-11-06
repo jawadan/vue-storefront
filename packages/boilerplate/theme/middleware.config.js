@@ -1,8 +1,10 @@
 module.exports = {
   integrations: {
     boilerplate: {
-      location: '@vue-storefront/boilerplate-api/server',
-      configuration: {}
+      location: 'vsf-wordpress-api/server',
+      configuration: {
+        api: process.env.WORDPRESS_GRAPHQL
+      }
     }
   }
 };

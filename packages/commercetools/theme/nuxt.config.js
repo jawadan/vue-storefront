@@ -46,6 +46,7 @@ export default {
   },
   buildModules: [
     // to core
+    ['vsf-wordpress/nuxt'],
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
     // to core soon
@@ -141,7 +142,8 @@ export default {
       ]
     },
     transpile: [
-      'vee-validate/dist/rules'
+      'vee-validate/dist/rules',
+      '@Oxyssweden/vsf-wordpress'
     ],
     plugins: [
       new webpack.DefinePlugin({
